@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+
+
+</head>
+<body>
+    <h1>задание 10 </h1>
+{% for group in groups %}
+    <h2>{{ group.category_name }}</h2>
+    <ul>
+        {% for product in group.items %}
+            <li>{{ product.name }}</li>
+        {% endfor %}
+    </ul>
+{% endfor %}
+
+</body>
+</html>
